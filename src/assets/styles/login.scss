@@ -1,0 +1,33 @@
+.login_container {
+  width: calc(100dvw - 20px);
+  height: calc(100dvh - 20px);
+  background-color: #000000;
+  padding: 10px;
+  background-image: url("../images/login_bg.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right;
+  .logo_container{
+    img{
+        width: 30px;
+    }
+  }
+  .login_body{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+    margin: 20px auto;
+    .login_left{
+        p{
+            color: #dfdfdf;
+        }
+        .title{
+            font-size: 24px;
+        }
+        .desc{
+            font-size: 20px;
+        }
+    }
+  }
+}
