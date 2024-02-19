@@ -25,10 +25,12 @@ import Tracking_Icon from "../../assets/images/Bag 4.png";
 import Billing_Icon from "../../assets/images/Wallet.png";
 import Reports_Icon from "../../assets/images/Paper.png";
 import Support_Icon from "../../assets/images/Work.png";
+import { useNavigate } from "react-router";
 
 const drawerWidth = 120;
-
 function ResponsiveDrawer(props) {
+  const navigate = useNavigate();
+
   const sideBarPages = [
     {
       name: "Dashboard",
@@ -39,11 +41,13 @@ function ResponsiveDrawer(props) {
       name: "Service",
       icon: Service_Icon_Active,
       activeicon: Service_Icon_Active,
+      path: "/service",
     },
     {
       name: "Tracking",
       icon: Tracking_Icon,
       activeicon: Tracking_Icon,
+      path: "/tracking",
     },
     {
       name: "Billing",
@@ -96,6 +100,11 @@ function ResponsiveDrawer(props) {
       children: `${name.split(" ")[0][0]}${name.split(" ")[1][0]}`,
     };
   }
+  const handleNavigate = (path) => {
+    if (path) {
+      navigate(path);
+    }
+  };
 
   const drawer = (
     <div className="sidebar-container">
@@ -113,6 +122,7 @@ function ResponsiveDrawer(props) {
                     ? "sidebar-item-selected"
                     : ``
                 } text-center sidebar-item pointer`}
+                onClick={() => handleNavigate(page?.path)}
               >
                 <div>
                   <img

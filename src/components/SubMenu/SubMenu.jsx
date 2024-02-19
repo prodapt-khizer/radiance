@@ -18,12 +18,15 @@ const SubMenu = ({
                 ? "submenu-item-last"
                 : "submenu-item"
             } d-flex ${
-              selectedSubMenu === service.key ? "submenu-active" : ""
+              selectedSubMenu === service.keybase ? "submenu-active" : ""
             }`}
             onClick={() => handleUpdateSelectedSubMenu(service)}
           >
             <div className="submenu-item-image">
-              <img className={`submenu-${service.key}`} src={service.image} />
+              <img
+                className={`submenu-${service.keybase}`}
+                src={service.image}
+              />
             </div>
             <div className="submenu-menucontent">
               <div className="submenu-menutitle d-flex justify-between">

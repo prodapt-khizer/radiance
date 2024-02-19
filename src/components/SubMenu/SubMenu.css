@@ -67,6 +67,13 @@ height: 40px;
 border-radius: 5px;
 
 }
+.submenu-none{
+    /* background-color: rgba(187, 90, 0, 1); */
+padding: 10px;
+height: 45px;
+/* border-radius: 5px; */
+
+}
 .submenu-menucontent{
     padding: 0 10px;
 }

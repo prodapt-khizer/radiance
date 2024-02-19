@@ -35,6 +35,7 @@ const Service = () => {
         "AT&T 5G for MVNOs: Fast. Reliable. Revolutionary Step into the future with AT&T’s leading 5G services, designed to revolutionize connectivity for Mobile Virtual Network Operators (MVNOs). Experience the difference with lightning-fast speeds, expansive nationwide coverage, and unmatched reliability that keeps your customers connected, no matter where they are.",
       image: Tower_Icon,
       key: "5g",
+      keybase: "5g",
     },
     {
       name: "EDGE Computing Services",
@@ -42,6 +43,7 @@ const Service = () => {
         "Experience the future of low-latency, high-efficiency digital solutions that transform your business operations and customer experiences.",
       image: Workd_Icon,
       key: "edge",
+      keybase: "edge",
     },
 
     {
@@ -50,6 +52,7 @@ const Service = () => {
         "Harness the power of advanced SIM technology combined with our intuitive billing platform, ensuring a competitive edge in the fast-paced telecom market, while optimizing revenue and operational efficiency Customized for OEMs.",
       image: Dish_Icon,
       key: "ome",
+      keybase: "ome",
     },
     {
       name: "Prepaid",
@@ -57,6 +60,7 @@ const Service = () => {
         "Harness the power of advanced SIM technology combined with our intuitive billing platform, ensuring a competitive edge in the fast-paced telecom market, while optimizing revenue and operational efficiency Customized for OEMs.",
       image: Sim_Icon,
       key: "prepaid",
+      keybase: "prepaid",
     },
   ];
   const addOnItems = [
