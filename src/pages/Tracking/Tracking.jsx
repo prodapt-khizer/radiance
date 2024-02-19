@@ -30,33 +30,26 @@ const Service = () => {
 
   const serviceMenuItems = [
     {
-      name: "AT&T 5G",
+      name: "Order Tracking",
       description:
-        "AT&T 5G for MVNOs: Fast. Reliable. Revolutionary Step into the future with AT&T’s leading 5G services, designed to revolutionize connectivity for Mobile Virtual Network Operators (MVNOs). Experience the difference with lightning-fast speeds, expansive nationwide coverage, and unmatched reliability that keeps your customers connected, no matter where they are.",
+        "This involves negotiating the terms and conditions of the agreement, drafting the contract document, and ensuring that it accurately reflects the intentions and agreements of all parties involved. ",
       image: Tower_Icon,
-      key: "5g",
+      key: "order-tracking",
     },
     {
-      name: "EDGE Computing Services",
+      name: "Contract Management",
       description:
-        "Experience the future of low-latency, high-efficiency digital solutions that transform your business operations and customer experiences.",
+        "This involves negotiating the terms and conditions of the agreement, drafting the contract document, and ensuring that it accurately reflects the intentions and agreements of all parties involved. ",
       image: Workd_Icon,
-      key: "edge",
+      key: "contract_management",
     },
 
     {
-      name: "OEM SIM Procurement",
+      name: "Transfer Status",
       description:
-        "Harness the power of advanced SIM technology combined with our intuitive billing platform, ensuring a competitive edge in the fast-paced telecom market, while optimizing revenue and operational efficiency Customized for OEMs.",
+        "This involves negotiating the terms and conditions of the agreement, drafting the contract document, and ensuring that it accurately reflects the intentions and agreements of all parties involved.",
       image: Dish_Icon,
-      key: "ome",
-    },
-    {
-      name: "Prepaid",
-      description:
-        "Harness the power of advanced SIM technology combined with our intuitive billing platform, ensuring a competitive edge in the fast-paced telecom market, while optimizing revenue and operational efficiency Customized for OEMs.",
-      image: Sim_Icon,
-      key: "prepaid",
+      key: "transfer_status",
     },
   ];
   const addOnItems = [
