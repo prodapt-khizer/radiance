@@ -1,7 +1,10 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import './global.scss';
+import './App.css';
+
 import Home from './components/Home';
 import Login from "./components/Login";
+import Service from "./pages/Service/Service";
 
 function App() {
   return (
@@ -12,7 +15,7 @@ function App() {
             path="/"
             element={
               <>
-                <Home />
+                <Service />
               </>
             }
           />

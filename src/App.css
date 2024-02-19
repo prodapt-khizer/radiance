@@ -1,8 +1,6 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +33,76 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+/* common css */
+.d-flex{
+  display: flex;
+}
+.d-flex-wrap{
+  display: flex;
+  flex-wrap: wrap;
+}
+.my-1{
+  margin: 0.5rem 0rem !important;
+}
+.my-2{
+  margin: 1rem 0rem !important;
+}
+.flex-row{
+  flex-direction: column;
+}
+.text-center{
+  text-align: center;
+}
+.pointer{
+  cursor: pointer;
+}
+.justify-between{
+  justify-content: space-between;
+}
+.bg-att{
+  background-color: rgba(0, 177, 234, 1) !important;
+}
+.custom-button{
+  /* padding: 8.5px 9px !important; */
+  font-size: 12px !important;
+  border-radius: 2px !important;
+  box-shadow:none !important
+}
+.css-vqmohf-MuiButtonBase-root-MuiRadio-root.Mui-checked{
+  color: rgba(0, 175, 237, 1) !important
+}
+.MuiInputBase-root .MuiSelect-select{
+  padding: 8.5px 9px; 
+}
+.MuiFormControl-root .MuiInputBase-root .MuiInputBase-input{
+  padding: 8.5px 9px; 
+}
+.css-dpjnhs-MuiInputBase-root-MuiOutlinedInput-root{
+  padding: 0px !important; 
+
+}
+.css-1pnmrwp-MuiTypography-root{
+  font-size:12px !important
+
+}
+
+
+
+/* drawer css */
+.drawer-content{
+ width: 120px;
+}
+.drawer-body{
+  width: calc(100% - 120px);
+}
+@media only screen and (max-width: 600px) {
+  .drawer-content{
+    width: 0px;
+   }
+   .drawer-body{
+     margin-top: 60px;
+     width: 100%;
+   }
 }
