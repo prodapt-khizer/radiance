@@ -82,6 +82,15 @@ const Login = () => {
       </div>
       <button onClick={handleLogin} className="login_button">Login</button>
     </div>
+    <div className="bottom-text-above">Already Registered? Login</div>
+    <div className="bottom-container">
+    <div className="bottom-text">
+      <p>Terms & Conditions</p>
+      <p>Support</p>
+      <p>Customer</p>
+    </div>
+    </div>
+    
         </div>
       </div>
     </div>

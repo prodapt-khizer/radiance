@@ -20,23 +20,26 @@
     align-items: center;
     margin: 20px auto;
     .login_left{
-      margin-top: 18%;
+      margin-top: 12%;
       width: 50%;
         p{
             color: #dfdfdf;
         }
         .title{
-            font-size: 30px;
+            font-size: 40px;
         }
         .desc{
-            font-size: 25px;
+            font-size:27px;
         }
     }
   }
 }
 .login_right{
+  display: flex;
 width:50%;
 padding: 20px;
+margin-top: 5%;
+justify-content: center;
 
 .input{
   width: 70%;
@@ -148,4 +151,31 @@ color: #DDDDFF;
   font-size: 14px;
   justify-content: center;
   background: linear-gradient(90deg, #009CD0 0%, #5FD7FF 103.17%);
+}
+
+.bottom-text-above{
+  display: flex;
+  justify-content: center;
+  color:rgba(255, 255, 255, 1);
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 12px;
+  margin-top: 20px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+.bottom-container{
+  display: flex;
+}
+.bottom-text{
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  width: 90%;
+  justify-content: space-between;
+  color:rgba(255, 255, 255, 1);
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  margin-top: 10px;
 }
