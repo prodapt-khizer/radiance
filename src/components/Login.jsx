@@ -47,7 +47,7 @@ const Login = () => {
       <h2>Login to your Account</h2>
       <p>See what is going on with your Network</p>
       <div className="input-group">
-        <label className="input-group">Email</label>
+        <label className="input-group-label">Email</label>
         <input
           type="email"
           id="email"
@@ -57,7 +57,7 @@ const Login = () => {
         />
       </div>
       <div className="input-group">
-        <label htmlFor="password">Password</label>
+        <label className="input-group-label">Password</label>
         <input
           type="password"
           id="password"
@@ -66,6 +66,7 @@ const Login = () => {
           onChange={(e) => setPassword(e.target.value)}
         />
       </div>
+      <div className="rem-text">
       <div className="remember-me">
         <input
           type="checkbox"
@@ -75,10 +76,11 @@ const Login = () => {
         />
         <label htmlFor="rememberMe">Remember Me</label>
       </div>
-      <button onClick={handleLogin}>Login</button>
       <div className="forgot-password">
         <a href="#" onClick={handleForgotPassword}>Forgot Password?</a>
       </div>
+      </div>
+      <button onClick={handleLogin} className="login_button">Login</button>
     </div>
         </div>
       </div>

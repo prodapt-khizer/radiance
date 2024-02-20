@@ -1,3 +1,4 @@
+
 .login_container {
   width: calc(100dvw - 20px);
   height: calc(100dvh - 20px);
@@ -36,6 +37,7 @@
 .login_right{
 width:50%;
 padding: 20px;
+
 .input{
   width: 70%;
 }
@@ -43,16 +45,26 @@ padding: 20px;
 .login-card {
   display: flex;
   flex-direction: column;
-  width: 80%;
-  padding: 20px;
+  width: 65%;
+  padding: 40px;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  color: #fff;
+background: rgba(0,0,0,0.24);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(3.7px);
+-webkit-backdrop-filter: blur(3.7px);
+color: #DDDDFF;
 }
 
 .login-card h2 {
   margin-bottom: 20px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
+}
+.login-card p {
+  margin-bottom: 20px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
 }
 
 .login-card input {
@@ -61,18 +73,47 @@ padding: 20px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-}
+  background: transparent;
+  color: #DDDDFF;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  justify-content: center;
 
+}
+.login-card input::placeholder{
+  color: #DDDDFF;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+}
+.rem-text{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 95%;
+  align-items: center;
+  padding: 5px;
+}
 .remember-me {
-  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  width:40%;
 }
 
 .remember-me label {
-  margin-left: 5px;
+  color: #DDDDFF;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  margin-top: 2px;
+}
+.remember-me input{
+  width:12%;
 }
 
 .forgot-password a {
-  color: blue;
+  color:rgba(0, 168, 224, 1);
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 200;
   text-decoration: none;
 }
 
@@ -85,4 +126,26 @@ padding: 20px;
 .input-group{
   width: 90%;
   background-color: transparent;
+  border:#DDDDFF;
+  padding: 2px;
+}
+.input-group-label{
+  color: #DFDFDF;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 300;
+  padding: 2px;
+}
+.login_button{
+  width: 95%;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  justify-content: center;
+  background: linear-gradient(90deg, #009CD0 0%, #5FD7FF 103.17%);
 }
