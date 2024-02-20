@@ -1,8 +1,32 @@
 import React from "react";
 import logo from "../assets/images/logo.png";
 import "../assets/styles/login.scss";
+import { useState } from "react";
+import logotext from '../assets/images/logotext.png'
 
 const Login = () => {
+
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [rememberMe, setRememberMe] = useState(false);
+
+  const handleLogin = () => {
+    // Handle login logic here
+    console.log('Email:', email);
+    console.log('Password:', password);
+    console.log('Remember Me:', rememberMe);
+  };
+
+  const handleCheckboxChange = () => {
+    setRememberMe(!rememberMe);
+  };
+
+  const handleForgotPassword = () => {
+    // Handle forgot password logic here
+    console.log('Forgot password clicked');
+  };
+
+
   return (
     <div className="login_container">
       <div className="logo_container">
@@ -16,14 +40,49 @@ const Login = () => {
           </p>
         </div>
         <div className="login_right">
-            <div className="login_heading">
-                <img src={logo} alt="" />
-                AT&T
-            </div>
-            <p className="heading1">Login to your Account</p>
-            <p className="heading_desc">See what is going on with your Network</p>
+        <div className="login-card">
+        <div className="logo-text">
+        <img src={logotext} className="image-style"/>
+      
+      <h2>Login to your Account</h2>
+      <p>See what is going on with your Network</p>
+      <div className="input-group">
+        <label className="input-group">Email</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+      </div>
+      <div className="input-group">
+        <label htmlFor="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter your password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+      </div>
+      <div className="remember-me">
+        <input
+          type="checkbox"
+          id="rememberMe"
+          checked={rememberMe}
+          onChange={handleCheckboxChange}
+        />
+        <label htmlFor="rememberMe">Remember Me</label>
+      </div>
+      <button onClick={handleLogin}>Login</button>
+      <div className="forgot-password">
+        <a href="#" onClick={handleForgotPassword}>Forgot Password?</a>
+      </div>
+    </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

@@ -19,15 +19,70 @@
     align-items: center;
     margin: 20px auto;
     .login_left{
+      margin-top: 18%;
+      width: 50%;
         p{
             color: #dfdfdf;
         }
         .title{
-            font-size: 24px;
+            font-size: 30px;
         }
         .desc{
-            font-size: 20px;
+            font-size: 25px;
         }
     }
   }
+}
+.login_right{
+width:50%;
+padding: 20px;
+.input{
+  width: 70%;
+}
+}
+.login-card {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+.login-card h2 {
+  margin-bottom: 20px;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.remember-me {
+  margin-bottom: 10px;
+}
+
+.remember-me label {
+  margin-left: 5px;
+}
+
+.forgot-password a {
+  color: blue;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+.image-style {
+  width: 20%;
+}
+.input-group{
+  width: 90%;
+  background-color: transparent;
 }
